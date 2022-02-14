@@ -1,27 +1,43 @@
 <script>
     import Navbar from "./Navbar.svelte";
+    import About from "./About.svelte";
+    import Projects from "./Projects.svelte";
+    import Section from "./Section.svelte";
+
     export let name;
 
-    let visible = {
-        about: false,
-        resume: false,
-        projects: false,
-        contact: false
-    }
-    function handleNavigate(event) {
-        visible = event.detail;
-    }
 </script>
 
-<Navbar on:navigate={handleNavigate} visible={visible}/>
+<Navbar/>
 <main>
-    <div>
-        <h1>Kyle <span>Cierzan</span></h1>
-        <h2>Software Engineer</h2>
+    <div class="scroll-container">
+        <Section id="splash">
+            <h1>Kyle <span>Cierzan</span></h1>
+            <h2>Software Engineer</h2>
+        </Section>
+        <Section id="about">
+            <About/>
+        </Section>
+        <Section id="projects">
+            <Projects/>
+        </Section>
+        <Section id="résumé">
+            <h3>My résumé</h3>
+        </Section>
+        <Section id="contact">
+            <h3>Contact me</h3>
+        </Section>
     </div>
 </main>
 
 <style>
+
+    .scroll-container {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
 
     @font-face {
         font-family: "Iosevka";
