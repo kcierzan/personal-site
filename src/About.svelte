@@ -1,12 +1,12 @@
 <div>
     <h3>Hello. My name is Kyle.</h3>
-    <p>
-        I like solving problems and making users happy. I am currently an Engineering Manager at
-        <a href="https://healthverity.com">HealthVerity</a>
-        where I work for a team of exceptional developers.
+    <p> I like solving problems and making users happy. </p>
+    <p> 
+      I am a software engineer at <a href="https://betterment.com">Betterment</a> where I write 
+      software that helps people plan for the future.
     </p>
     <p>
-        I enjoy audio programming, digital signal processing, and electronic music.
+        For fun, I dabble in audio programming, electronic music, and learning about digital signal processing.
     </p>
     <p>
         I live in the City of Brotherly Love with my fiancée Gabi and our cat Beau.
